@@ -1,266 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelGo Agencia de Viajes</title>
+    <title>TravelGo</title>
 
     <link rel="stylesheet" href="style.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">TravelGo</a>
+
+            <a class="navbar-brand" href="#">
+                TravelGo
+            </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="menu">
+
                 <ul class="navbar-nav ms-auto">
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Inicio</a>
+                        <a class="nav-link" href="destinos.html">
+                            Destinos
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#destinos">Destinos</a>
+                        <a class="nav-link" href="promociones.html">
+                            Promociones
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#promociones">Promociones</a>
+                        <a class="nav-link" href="contacto.html">
+                            Contacto
+                        </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
                 </ul>
+
             </div>
+
         </div>
+
     </nav>
 
-    <section id="inicio">
-        <div id="carouselViajes" class="carousel slide" data-bs-ride="carousel">
+    <section>
 
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselViajes" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#carouselViajes" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#carouselViajes" data-bs-slide-to="2"></button>
-            </div>
+        <img 
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+            class="w-100 hero-image"
+            alt=""
+        >
 
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="d-block w-100"
-                        alt="">
-
-                    <div class="carousel-caption">
-                        <div class="hero-text">
-                            <h1>Explora el Mundo</h1>
-                            <p>Descubre destinos increíbles con nosotros</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e" class="d-block w-100"
-                        alt="">
-
-                    <div class="carousel-caption">
-                        <div class="hero-text">
-                            <h1>Aventuras Inolvidables</h1>
-                            <p>Viaja a los lugares más hermosos del planeta</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" class="d-block w-100"
-                        alt="">
-
-                    <div class="carousel-caption">
-                        <div class="hero-text">
-                            <h1>Vacaciones Perfectas</h1>
-                            <p>Planea tu próximo destino hoy mismo</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselViajes" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselViajes" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-
-        </div>
     </section>
 
-    <section id="destinos" class="container py-5">
-        <div class="text-center mb-5">
-            <h2>Destinos Populares</h2>
-            <p>Conoce nuestros lugares más visitados</p>
-        </div>
+    <div class="hero-content">
 
-        <div class="row g-4">
+        <h1>
+            Explora el Mundo
+        </h1>
 
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c" class="card-img-top" alt="">
+        <p>
+            Descubre destinos increíbles
+        </p>
 
-                    <div class="card-body">
-                        <h5 class="card-title">París</h5>
+        <a href="destinos.html" class="btn btn-primary">
+            Ver Destinos
+        </a>
 
-                        <p class="card-text">
-                            Vive la magia de la ciudad del amor y disfruta de experiencias únicas.
-                        </p>
-
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalParis">
-                            Ver más
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c" class="card-img-top" alt="">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Japón</h5>
-
-                        <p class="card-text">
-                            Descubre la combinación perfecta entre tecnología y tradición.
-                        </p>
-
-                        <button class="btn btn-primary">
-                            Ver más
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4" class="card-img-top" alt="">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Cartagena</h5>
-
-                        <p class="card-text">
-                            Relájate en playas paradisíacas y disfruta del mejor clima.
-                        </p>
-
-                        <button class="btn btn-primary">
-                            Ver más
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="promociones" class="bg-dark text-white text-center py-5">
-        <div class="container">
-            <h2>Promoción Especial</h2>
-
-            <p>
-                Reserva hoy y obtén descuentos exclusivos en tus próximas vacaciones.
-            </p>
-
-            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalParis">
-                Ver Oferta
-            </button>
-        </div>
-    </section>
-
-    <div class="modal fade" id="modalParis">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <h5 class="modal-title">Viaje a París</h5>
-
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <div class="modal-body">
-                    <p>
-                        Disfruta de un viaje de 7 días por París incluyendo hospedaje, desayuno y recorridos turísticos.
-                    </p>
-
-                    <p>
-                        Precio especial desde $1200 USD.
-                    </p>
-                </div>
-
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" data-bs-dismiss="modal">
-                        Cerrar
-                    </button>
-                </div>
-
-            </div>
-        </div>
     </div>
-
-    <section id="contacto" class="contact-section py-5">
-        <div class="container">
-
-            <div class="text-center mb-4">
-                <h2>Contáctanos</h2>
-                <p>Estamos listos para ayudarte a planear tu proximo viaje</p>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-
-                    <form>
-
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Nombre">
-                        </div>
-
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Correo Electrónico">
-                        </div>
-
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Asunto">
-                        </div>
-
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Mensaje"></textarea>
-                        </div>
-
-                        <div class="text-center">
-                            <button class="btn btn-primary">
-                                Enviar
-                            </button>
-                        </div>
-
-                    </form>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 TravelGo Agencia de Viajes</p>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
