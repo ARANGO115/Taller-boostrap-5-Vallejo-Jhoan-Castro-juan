@@ -2,12 +2,18 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.carousel-item img{
+.hero-image{
     height: 100vh;
     object-fit: cover;
 }
 
-.hero-text{
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
     background-color: rgba(0,0,0,0.5);
     padding: 20px;
     border-radius: 10px;
@@ -16,15 +22,4 @@ body{
 .card img{
     height: 250px;
     object-fit: cover;
-}
-
-.contact-section{
-    background-color: #f8f9fa;
-}
-
-footer{
-    background-color: #212529;
-    color: white;
-    text-align: center;
-    padding: 20px;
 }
